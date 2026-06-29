@@ -1,11 +1,11 @@
-package single-and-multi-level-inheritance;
+//package single-and-multi-level-inheritance;
 
 import java.util.Scanner;
 public class SingelInheritance {
 
     public static void main(String[] args){
         System.out.print("program of Single Inheritance ");
-        Prime p = new Prime();
+        new Prime();
     }
 }
 
@@ -36,6 +36,7 @@ class Calculation {
                 break;
         }
         System.out.println();
+        s.close();
     }
 }
 
@@ -76,6 +77,7 @@ class Grade extends Calculation {
                 System.out.print("Student is FAIL");
         }
         System.out.println();
+        s.close();
     }
 }
 
@@ -98,5 +100,6 @@ class Prime extends Grade{
                 System.out.print(min+", ");
             min++;
         }
+        s.close();
     }
 }
